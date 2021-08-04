@@ -31,11 +31,11 @@
     methods: {
       updateCapstone: function(capstone) {
         console.log("updating...")
-        var editCapstoneParams = capstone;
-        axios.patch("localhost:3000/capstones" + editCapstoneParams.id).then((response) => {
-          console.log(response.data);
-          // this.$router.push("/capstones");
-        });
+        // var editCapstoneParams = capstone;
+        // axios.patch("localhost:3000/capstones" + editCapstoneParams.id).then((response) => {
+        //   console.log(response.data);
+        //   // this.$router.push("/capstones");
+        // });
       },
     },
   };
