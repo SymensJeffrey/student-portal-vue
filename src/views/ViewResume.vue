@@ -45,7 +45,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "Here's your Resume",
+      message: "Here is your Resume",
       student: {},
       experience: {},
       education: {},
