@@ -46,9 +46,7 @@ export default {
   data: function () {
     return {
       message: "Here is your Resume",
-      student: {
-        
-      },
+      student: {},
       experience: {},
       education: {},
       skills: {},
@@ -62,10 +60,10 @@ export default {
       console.log("getting a single resume");
       console.log(this.$route);
       // get data from rails
-      axios.get(`/resumes/${this.$route.params.id}`).then((response) => {
-        console.log(response.data);
-        this.resume = response.data;
-      });
+      // axios.get(`/resumes/${this.$route.params.id}`).then((response) => {
+      //   console.log(response.data);
+      //   this.resume = response.data;
+      // });
     },
   },
 };
