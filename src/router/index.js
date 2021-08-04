@@ -6,6 +6,8 @@ import EducationsEdit from "..views/EducationsEdit.vue";
 import SkillsEdit from "..views/SkillsEdit.vue"
 import ExperiencesEdit from "..views/ExperiencesEdit.vue";
 import Login from '../views/Login.vue';
+import ViewResume from '../views/ViewResume.vue'
+import CapstoneShow from '../views/CapstoneShow.vue'
 
 Vue.use(VueRouter)
 
@@ -16,9 +18,22 @@ const routes = [
     component: Home
   },
   {
+
+    path: '/ViewResume',
+    name: 'resumeShow',
+    component: ViewResume,
+
     path: '/Login',
+
+    path: '/capstones/:id',
+    name: 'CapstoneShow',
+    component: CapstoneShow
+  },
+  {
+    path: '/login',
     name: 'Login',
     component: Login
+
   },
   {
     path: '/about',

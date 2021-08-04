@@ -7,6 +7,8 @@
       <router-link to="/educations">Login</router-link> |
       <router-link to="/experiences">Login</router-link>
       <router-link to="/skills">Login</router-link>
+      <router-link to="/ViewResume">Show Resume</router-link> 
+
     </div>
     <router-view/>
   </div>
