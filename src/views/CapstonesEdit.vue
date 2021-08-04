@@ -30,10 +30,6 @@
         axios.patch("/capstones" + editCapstoneParams.id).then((response) => {
           console.log("Capstone Update", response);
           // this.$router.push("/capstones");
-        })
-        .catch((error) => {
-          console.log("capstones update error", error.response);
-          this.errors = error.response.data.errors;
         });
       },
     },
