@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <form v-on:submit.prevent="submit()">
+    <form v-on:submit.prevent="test()">
       <h1>Login</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -13,7 +13,7 @@
         <label>Password:</label>
         <input type="password" v-model="newSessionParams.password" />
       </div>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Login" />
     </form>
   </div>
 </template>
@@ -46,6 +46,13 @@ export default {
           this.password = "";
         });
     },
+    test: function () {
+      console.log("Logging in as Student");
+      this.$router.push("/");
+    },
   },
 };
 </script>
+
+<style>
+</style>
