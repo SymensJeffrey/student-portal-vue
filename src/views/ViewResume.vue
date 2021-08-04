@@ -46,7 +46,9 @@ export default {
   data: function () {
     return {
       message: "Here is your Resume",
-      student: {},
+      student: {
+        
+      },
       experience: {},
       education: {},
       skills: {},

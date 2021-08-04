@@ -3,11 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-<<<<<<< HEAD
       <router-link to="/ViewResume">Show Resume</router-link> 
-=======
       <router-link to="/Login">Login</router-link>
->>>>>>> cbfd80f5562b2c74efe60fce728aa72af40c6947
+
     </div>
     <router-view/>
   </div>
