@@ -42,7 +42,7 @@ export default {
   methods: {
     submit: function () {
       axios
-        .patch(`/resumes/${this.$route.params.id}`, this.editExperienceParams)
+        .patch(`/experiences/${this.$route.params.id}`, this.editExperienceParams)
         .then((response) => {
           console.log(response.data);
           this.$router.push("/experiences/" + this.$route.params.id);
