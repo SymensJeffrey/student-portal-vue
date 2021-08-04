@@ -3,7 +3,11 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
+<<<<<<< HEAD
       <router-link to="/Login">Login</router-link> |
+=======
+      <router-link to="/login">Login</router-link>
+>>>>>>> 63b35a9c918c567a3957b560ad7a35dbd96ea18d
     </div>
     <router-view/>
   </div>
