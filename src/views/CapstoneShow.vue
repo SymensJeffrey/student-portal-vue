@@ -1,13 +1,33 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
+    
+    
     <div class="capstone-show">
-      <h2> {{ capstone.name}} </h2>
-      <p> Student: </p>
-      <p> Description: {{ capstone.description }}</p>
-      <p> URL: {{ capstone.url }} </p>
-      <p> Sreenshot: {{ capstone.screenshot}} </p>
-       <router-link v-bind:to="`/capstones/${capstone.id}/edit`">Edit Capstone</router-link>
+
+    <div class="card text-center">
+      <div class="card-header">
+        Capstone  
+      </div>
+    <div class="card-body">
+    <h5 class="card-title">  </h5>
+    <p class="card-text"> Description: {{ capstone.description }}</p>
+    <p class="card-text"> URL: {{ capstone.url }}</p>
+    <p class="card-text"> Screenshot: {{ capstone.screenshot }} </p>
+    <router-link v-bind:to="`/capstones/${capstone.id}/edit`">
+    <a href="#" class="btn btn-primary"> Edit Capstone</a>
+    </router-link>
+   
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+
+      
+     
+     
+      
+       
       <hr> 
     </div>
   </div>
@@ -16,7 +36,8 @@
 
 
 
-<style></style>
+<style>
+</style>
 
 <script>
 import axios from "axios";
