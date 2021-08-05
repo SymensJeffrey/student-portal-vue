@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <form v-on:submit.prevent="test()">
+    <form v-on:submit.prevent="submit()">
       <h1>Login</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -37,7 +37,7 @@ export default {
             "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
           localStorage.setItem("user_id", response.data.user_id);
-          this.$router.push("/");
+          this.$router.push("/capstones/1");
         })
         .catch((error) => {
           console.log(error.response);
@@ -48,7 +48,7 @@ export default {
     },
     test: function () {
       console.log("Logging in as Student");
-      this.$router.push("/");
+      this.$router.push("/capstones/1");
     },
   },
 };
