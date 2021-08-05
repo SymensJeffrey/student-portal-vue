@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <form v-on:submit.prevent="submit()">
+    <form v-on:submit.prevent="test()">
       <h1>Login</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -48,7 +48,7 @@ export default {
     },
     test: function () {
       console.log("Logging in as Student");
-      this.$router.push("/capstones/1");
+      this.$router.push("/viewresume");
     },
   },
 };
