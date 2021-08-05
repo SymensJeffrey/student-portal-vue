@@ -1,6 +1,6 @@
 <template>
   <div class="resumes-show" style="width 18rem">
-    <div class="card text-center bg-dark">
+    <div class="card text-center">
       <h1 class="card-header">{{ message }}</h1>
       <h2 class="card-title">Student:</h2>
       <h4 class="card-text">First Name: {{ student.first_name }}</h4>
@@ -14,19 +14,19 @@
       <h4 class="card-text">Github URL: {{ student.github_url }}</h4>
       <h4 class="card-text" >Photo: {{ student.photo }}</h4>
     </div>
-    <div class ="card text-center bg-dark" >
-      <h2 class="card title bg-dark">Experience:</h2>
+    <div class ="card text-center " >
+      <h2 class="card title">Experience:</h2>
       <h4 class="card-text">Start Date: {{ experience.start_date }} </h4>
       <h4 class="card-text"End Date: {{ experience.end_date }} </h4>
       <h4 class="card-text">Job Title: {{ experience.job_title }} </h4>
       <h4 class="card-text">company_name: {{ experience.company_name }} </h4>
       <h4 class="card-text">Details: {{ experience.details}} </h4>
     </div>
-    <div class="card text-center bg-dark">
+    <div class="card text-center">
       <h2 class="card-title">Skills:</h2>
       <h4 class="card-text">Skill: {{ skills.name }} </h4>
     </div>
-    <div class="card text-center bg-dark">
+    <div class="card text-center">
       <h2 class="card-title">Education:</h2>
       <h4 class="card-text">Start Date: {{ education.start_date }}</h4>
       <h4 class="card-text">End Date: {{ education.end_date }}</h4>
