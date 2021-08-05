@@ -1,12 +1,32 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
+    <!-- <h1>{{ message }}</h1>
     
     <p> Name: <input type="text" v-model="capstone.name" /></p>
     <p> Description: <input type="text" v-model="capstone.description" /></p>
     <p> URL: <input type="text" v-model="capstone.url" /></p>
     <p> Screenshot: <input type="text" v-model="capstone.screenshot" /></p>
-    <p> <button v-on:click="updateCapstone(capstone)"> Update </button> </p>
+    <p> <button v-on:click="updateCapstone(capstone)"> Update </button> </p> -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="card text-center">
+        <div class="card-header">
+          Edit Capstone
+        </div>
+        <div class="card-body">
+          <p> Name: <input type="text" v-model="capstone.name" /></p>
+          <p> Description: <input type="text" v-model="capstone.description" /></p>
+          <p> URL: <input type="text" v-model="capstone.url" /></p>
+          <p> Screenshot: <input type="text" v-model="capstone.screenshot" /></p>
+          <a href="#" class="btn btn-primary" v-on:click="updateCapstone(capstone)">Update</a>
+        </div>
+      </div>
+    </div>
+    
+    
   </div>
 
 </template>
