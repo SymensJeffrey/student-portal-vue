@@ -1,10 +1,14 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-dark">
     <div id="nav">
       <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/Login">Login</router-link> |
       <router-link to="/ViewResume">Show Resume</router-link> |
+
+      <router-link to="/capstones/:id">Show Capstone</router-link> 
+
+
       <router-link to="/capstones/:id">Show Capstone</router-link>  -->
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,6 +32,7 @@
           </div>
         </div>
       </nav>
+
     </div>
     <router-view/>
   </div>
