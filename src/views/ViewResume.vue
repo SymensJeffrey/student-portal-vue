@@ -29,7 +29,7 @@
     <p>Student_id: {{ student.student_id }}</p>
     <router-link v-bind:to="`/educations`">Edit Education</router-link> | 
     <router-link v-bind:to="`/experiences`">Edit Experiences</router-link> |
-    <router-link v-bind:to="`/skills`">Edit Skills</router-link> |
+    <router-link v-bind:to="`/skills`">Edit Skills</router-link> |  
     <router-link v-bind:to="`/student`"> Edit Student Info</router-link>
   </div>
 </template>
@@ -46,9 +46,7 @@ export default {
   data: function () {
     return {
       message: "Here is your Resume",
-      student: {
-        
-      },
+      student: {},
       experience: {},
       education: {},
       skills: {},
