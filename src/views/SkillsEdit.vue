@@ -19,7 +19,9 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      editSkillParams: {},
+      editSkillParams: {
+        skill_name: "skill"
+      },
       errors: [],
     };
   },

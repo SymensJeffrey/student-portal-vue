@@ -35,7 +35,13 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      editExperienceParams: {},
+      editExperienceParams: {
+        start_date: "start",
+        end_date: "end",
+        job_title: "degree",
+        company_name: "university",
+        details: "details"
+      },
       errors: [],
     };
   },
