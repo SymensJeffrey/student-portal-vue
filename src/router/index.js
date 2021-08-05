@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import CapstonesEdit from '../views/CapstonesEdit.vue'
 import ViewResume from '../views/ViewResume.vue'
 import Login from '../views/Login.vue'
 import CapstoneShow from '../views/CapstoneShow.vue'
@@ -36,7 +37,8 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  { path: "/capstones/:id/edit", name: "Capstones-edit", component: CapstonesEdit },
 ]
 
 const router = new VueRouter({
