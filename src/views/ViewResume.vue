@@ -27,15 +27,9 @@
     <h4>University Name: {{ education.university_name }}</h4>
     <h4>Details: {{ education.details }}</h4>
     <p>Student_id: {{ student.student_id }}</p>
-<<<<<<< HEAD
     <router-link v-bind:to="`/educations`">Edit Education</router-link> | 
     <router-link v-bind:to="`/experiences`">Edit Experiences</router-link> |
     <router-link v-bind:to="`/skills`">Edit Skills</router-link> |  
-=======
-    <router-link v-bind:to="`/educations/${student.id}/edit`">Edit Education</router-link> | 
-    <router-link v-bind:to="`/experiences/${student.id}/edit`">Edit Experiences</router-link> |
-    <router-link v-bind:to="`/skills/${student.id}/edit`">Edit Skills</router-link> |
->>>>>>> 9f821eacdb30f4ef8f8acfc1132934aa7866ea8a
     <router-link v-bind:to="`/student`"> Edit Student Info</router-link>
   </div>
 </template>
@@ -52,10 +46,36 @@ export default {
   data: function () {
     return {
       message: "Here is your Resume",
-      student: {},
-      experience: {},
-      education: {},
-      skills: {},
+      student: {
+        first_name: "this is a first name",
+        last_name: "this is a last name",
+        email: "this is an email",
+        phone_number: "this is a phone number",
+        short_bio: "this a short bio",
+        twitter_handle: "this is a twitter handle",
+        website_url: "this is a website url",
+        online_url: "this is a online url",
+        github_url: "this is a github url",
+        photo: "this is a photo",
+        student_id: "this is a student id",
+      },
+      experience: {
+        start_date: "this is a start date",
+        end_date: "this is an end date",
+        job_title: "this is a job title",
+        company_name: "this is a company name",
+        details: "these are details",
+      },
+      education: {
+        start_date: "this is a start date",
+        end_date: "this is a end date",
+        degree: "this is a degree",
+        university_name: "this is a university name",
+        details: "these are details",
+      },
+      skills: {
+        name: "these are skills",
+      },
     };
   },
   created: function () {
