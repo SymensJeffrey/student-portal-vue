@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div class="skills-edit">
     <form v-on:submit.prevent="submit()">
       <h1>Edit Skills</h1>
@@ -12,6 +12,29 @@
       <input type="submit" value="Submit" />
     </form>
   </div>
+</template> -->
+
+<template>
+
+  <div class="card text-center">
+  <div class="card-header">
+    <h1>Skills</h1>
+  </div>
+  <div class="card-body">
+    <form v-on:submit.prevent="submit()">
+    <h5 class="card-title">Edit Your Information</h5>
+    <p class="card-text"><ul>
+        <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+      </ul>
+      <div>
+        <label>Skill Name:</label>
+        <input type="text" v-model="editSkillParams.skill_name" />
+      </div></p>
+    <input type="submit" value="Submit" />
+    </form>
+  </div>
+  </div>
+
 </template>
 
 <script>
