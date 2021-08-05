@@ -27,9 +27,15 @@
     <h4>University Name: {{ education.university_name }}</h4>
     <h4>Details: {{ education.details }}</h4>
     <p>Student_id: {{ student.student_id }}</p>
+<<<<<<< HEAD
     <router-link v-bind:to="`/educations`">Edit Education</router-link> | 
     <router-link v-bind:to="`/experiences`">Edit Experiences</router-link> |
     <router-link v-bind:to="`/skills`">Edit Skills</router-link> |  
+=======
+    <router-link v-bind:to="`/educations/${student.id}/edit`">Edit Education</router-link> | 
+    <router-link v-bind:to="`/experiences/${student.id}/edit`">Edit Experiences</router-link> |
+    <router-link v-bind:to="`/skills/${student.id}/edit`">Edit Skills</router-link> |
+>>>>>>> 9f821eacdb30f4ef8f8acfc1132934aa7866ea8a
     <router-link v-bind:to="`/student`"> Edit Student Info</router-link>
   </div>
 </template>
