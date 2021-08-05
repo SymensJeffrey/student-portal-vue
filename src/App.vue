@@ -8,6 +8,7 @@
       <router-link to="/experiences">Login</router-link>
       <router-link to="/skills">Login</router-link>
       <router-link to="/ViewResume">Show Resume</router-link> 
+      <router-link to="/capstones/:id">Show Capstone</router-link> 
 
     </div>
     <router-view/>

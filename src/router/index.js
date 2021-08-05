@@ -18,13 +18,11 @@ const routes = [
     component: Home
   },
   {
-
     path: '/ViewResume',
     name: 'resumeShow',
     component: ViewResume,
-
-    path: '/Login',
-
+  },
+  {
     path: '/capstones/:id',
     name: 'CapstoneShow',
     component: CapstoneShow
